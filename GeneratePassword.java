@@ -1,11 +1,18 @@
 import java.util.Scanner;
 import java.util.Random;
+// <------- CipherForge ------->
 
+// Personalized Java Password Generator
+// Presenting by, 
+// Akash, Alamin, Ariful, Tanvir, Mehedi, Naim, Rifat
 public class PasswordGenerator {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
+        System.out.println("           =====> CipherForge <=====           ");
+        System.out.println();
+        System.out.println();
+        System.out.println();
         // 1. Get user details via Scanner
         System.out.print("Enter your name: ");
         String name = scanner.nextLine().replaceAll("\\s+", "");
@@ -46,6 +53,7 @@ public class PasswordGenerator {
             int randomIndex = random.nextInt(allowedChars.length());
             backRandom.append(allowedChars.charAt(randomIndex));
         }
+        /* Thank You So Much Sir */
 
         // Combine: Front Random + Name + Color + Back Random
         return frontRandom.toString() + name + color + backRandom.toString();
